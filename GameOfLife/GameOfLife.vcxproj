@@ -146,9 +146,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="GameOfLife.h" />
     <ClInclude Include="SparseGrid.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GameOfLife.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SparseGrid.cpp" />
   </ItemGroup>
