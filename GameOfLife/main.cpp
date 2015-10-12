@@ -1,5 +1,7 @@
 #include "GameOfLife.h"
 #include <regex>
+#include <sstream>
+#include <iostream>
 
 int main(int argc, char* argv[])
 {
@@ -23,8 +25,16 @@ int main(int argc, char* argv[])
 		}
 	}
 	
-	for (unsigned short i = 0; i < 10; i++)
+	// Output each generation to the console in (x, y) pair format
+	for (unsigned short i = 0; i < 20; i++)
 	{
+		stringstream outputString;
+		outputString << "Generation " << (i+1) << ":\t";
+		gameOfLife.forEachLiveCell([&outputString](auto liveCell)
+		{
+			outputString << "(" << liveCell.first << ", " << liveCell.second << ") ";
+		});
+		cout << outputString.str() << endl;
 		gameOfLife.nextGeneration();
 	}
 

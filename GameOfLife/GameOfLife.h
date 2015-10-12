@@ -13,4 +13,11 @@ public:
 	void nextGeneration();
 	void addLiveCell(int64_t x, int64_t y);
 	const SparseGrid &getCurrentGeneration() const;
+	template <class Op> inline void forEachLiveCell(Op op) const;
 };
+
+template <class Op>
+void GameOfLife::forEachLiveCell(Op op) const
+{
+	getCurrentGeneration().forEach(op);
+}
