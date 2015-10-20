@@ -146,10 +146,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CoordinateHash.h" />
     <ClInclude Include="GameOfLife.h" />
     <ClInclude Include="SparseGrid.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CoordinateHash.cpp" />
     <ClCompile Include="GameOfLife.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SparseGrid.cpp" />

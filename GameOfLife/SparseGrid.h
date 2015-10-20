@@ -1,13 +1,14 @@
 #pragma once
 #include <utility>
-#include <set>
+#include <unordered_set>
 #include <cstdint>
 #include <functional>
 #include <algorithm>
+#include "CoordinateHash.h"
 
 class SparseGrid {
 private:
-	std::set<std::pair<const int64_t, const int64_t>> grid;
+	std::unordered_set<std::pair<const int64_t, const int64_t>, CoordinateHash> grid;
 public:
 	// Rely on the default constructor automatically generated
 	void add(const int64_t x, const int64_t y);
