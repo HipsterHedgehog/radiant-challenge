@@ -148,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="CoordinateHash.h" />
     <ClInclude Include="GameOfLife.h" />
+    <ClInclude Include="GameOfLifeOutput.h" />
     <ClInclude Include="SparseGrid.h" />
   </ItemGroup>
   <ItemGroup>

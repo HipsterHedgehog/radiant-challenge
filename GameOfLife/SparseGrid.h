@@ -1,7 +1,6 @@
 #pragma once
 #include <utility>
 #include <unordered_set>
-#include <cstdint>
 #include <functional>
 #include <algorithm>
 #include "CoordinateHash.h"
